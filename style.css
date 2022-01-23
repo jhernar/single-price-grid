@@ -8,8 +8,13 @@
     --bright-yellow: hsl(71, 73%, 54%);
 
     /* ### Neutral */
-    --light-gray: hsl(204, 43%, 93%);
+    --light-gray: hsl(204, 41%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
+
+		--card-1: #fff;
+		--card-2: #2bb3b1;
+		--card-3:#4abebd;
+
 }
 
 * {
@@ -24,8 +29,33 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--light-gray);
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
 }
 
+.card {
+	width: 375px;
+}
+
+.card-1 {
+	background-color: var(--card-1);
+	border-radius: 5px 5px 0 0;
+}
+
+.card-1 h2 {
+	color: var(--card-2);
+}
+
+.card-2 {
+	background-color: var(--card-2);
+}
+
+.card-3 {
+	background-color: var(--card-3);
+	border-radius: 0 0 5px 5px;
+}
 
 
 .attribution {
