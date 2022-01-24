@@ -11,9 +11,9 @@
     --light-gray: hsl(204, 41%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
 
-		--card-1: #fff;
-		--card-2: #2bb3b1;
-		--card-3:#4abebd;
+    --card-1: #fff;
+    --card-2: #2bb3b1;
+    --card-3: #4abebd;
 
 }
 
@@ -26,35 +26,93 @@
 body {
     font-size: 16px;
     font-family: var(--karla-font);
-    width: 100vw;
-    height: 100vh;
     background-color: var(--light-gray);
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;
-		justify-content: center;
+}
+
+
+span {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 30px;
+}
+
+.container {
 }
 
 .card {
-	width: 375px;
+    padding: 20px 30px;
+    width: 375px;    
+    
 }
 
 .card-1 {
-	background-color: var(--card-1);
-	border-radius: 5px 5px 0 0;
+    background-color: var(--card-1);
+    padding: 30px;
 }
 
 .card-1 h2 {
-	color: var(--card-2);
+    color: var(--card-2);
+}
+
+.card-1 .height {
+    line-height: 25px;
+}
+
+.green {
+    color: var(--bright-yellow);
+    padding: 20px 20px 20px 0;
+    font-weight: bold;
 }
 
 .card-2 {
-	background-color: var(--card-2);
+    background-color: var(--card-2);
+    color: #fff;
 }
 
+.card-2 span {
+    padding: 15px 0 10px 0;
+}
+
+span>h2{
+    font-size: 30px;
+}
+
+.card-2 p {
+    padding-bottom: 30px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bright-yellow);
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
 .card-3 {
-	background-color: var(--card-3);
-	border-radius: 0 0 5px 5px;
+    background-color: var(--card-3);
+    color: #fff;
+}
+
+.card-3 p {
+    padding: 20px 80px 20px 0;
+    line-height: 25px;
 }
 
 
